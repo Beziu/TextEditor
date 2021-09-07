@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Edytor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>App.png</normaloff>App.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout">
+    <property name="leftMargin">
+     <number>6</number>
+    </property>
+    <property name="topMargin">
+     <number>6</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>&amp;Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtworz"/>
+    <addaction name="actionZapisz"/>
+    <addaction name="actionZapiszJako"/>
+    <addaction name="separator"/>
+    <addaction name="actionPodgladWydruku"/>
+    <addaction name="actionDrukuj"/>
+    <addaction name="actionUstawieniaWydruku"/>
+    <addaction name="separator"/>
+    <addaction name="actionKoniec"/>
+   </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>&amp;Format</string>
+    </property>
+    <addaction name="actionTextWrap"/>
+    <addaction name="actionTextKursiwe"/>
+   </widget>
+   <widget class="QMenu" name="menuEdycja">
+    <property name="title">
+     <string>&amp;Edycja</string>
+    </property>
+    <addaction name="actionCofnij"/>
+    <addaction name="actionPonow"/>
+    <addaction name="separator"/>
+    <addaction name="actionWytnij"/>
+    <addaction name="actionKopiuj"/>
+    <addaction name="actionWklej"/>
+    <addaction name="separator"/>
+    <addaction name="actionSzukajIZastap"/>
+   </widget>
+   <widget class="QMenu" name="menuEXtras">
+    <property name="title">
+     <string>E&amp;xtras</string>
+    </property>
+    <widget class="QMenu" name="menuJezyk">
+     <property name="title">
+      <string>Jezyk</string>
+     </property>
+     <addaction name="actionPolski"/>
+     <addaction name="actionAngielski"/>
+     <addaction name="actionNiemiecki"/>
+    </widget>
+    <addaction name="menuJezyk"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuEdycja"/>
+   <addaction name="menuFormat"/>
+   <addaction name="menuEXtras"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNowy"/>
+   <addaction name="actionOtworz"/>
+   <addaction name="actionZapisz"/>
+   <addaction name="actionDrukuj"/>
+   <addaction name="separator"/>
+   <addaction name="actionSzukajIZastap"/>
+  </widget>
+  <action name="actionKoniec">
+   <property name="icon">
+    <iconset>
+     <normaloff>Exit.png</normaloff>Exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Koni&amp;ec</string>
+   </property>
+  </action>
+  <action name="actionNowy">
+   <property name="icon">
+    <iconset>
+     <normaloff>New.png</normaloff>New.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Nowy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOtworz">
+   <property name="icon">
+    <iconset>
+     <normaloff>Open.png</normaloff>Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Otworz</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="icon">
+    <iconset>
+     <normaloff>Save.png</normaloff>Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zapi&amp;sz</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionZapiszJako">
+   <property name="text">
+    <string>Z&amp;apisz jako...</string>
+   </property>
+  </action>
+  <action name="actionTextWrap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Zawijanie wierszy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionKopiuj">
+   <property name="text">
+    <string>Kopiuj</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionWklej">
+   <property name="text">
+    <string>Wklej</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionWytnij">
+   <property name="text">
+    <string>Wytnij</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionPonow">
+   <property name="text">
+    <string>Ponow</string>
+   </property>
+  </action>
+  <action name="actionCofnij">
+   <property name="icon">
+    <iconset>
+     <normaloff>Search.jpg</normaloff>Search.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Cofnij</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionTextKursiwe">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Text Kursiwe</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionDrukuj">
+   <property name="icon">
+    <iconset>
+     <normaloff>Print.png</normaloff>Print.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Drukuj</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPodgladWydruku">
+   <property name="icon">
+    <iconset>
+     <normaloff>PagePreview.png</normaloff>PagePreview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Podglad &amp;wydruku</string>
+   </property>
+  </action>
+  <action name="actionUstawieniaWydruku">
+   <property name="icon">
+    <iconset>
+     <normaloff>PageSetup.png</normaloff>PageSetup.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ustawienia wydruku</string>
+   </property>
+   <property name="toolTip">
+    <string>Ustawienia wydruku</string>
+   </property>
+  </action>
+  <action name="actionPolski">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Polski</string>
+   </property>
+  </action>
+  <action name="actionAngielski">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Angielski</string>
+   </property>
+  </action>
+  <action name="actionNiemiecki">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Niemiecki</string>
+   </property>
+  </action>
+  <action name="actionSzukajIZastap">
+   <property name="icon">
+    <iconset>
+     <normaloff>SearchTransparent.png</normaloff>SearchTransparent.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Szukaj i zastap</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionCofnij</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionKopiuj</sender>
+   <signal>changed()</signal>
+   <receiver>textEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionWytnij</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionWklej</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPonow</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>redo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTextKursiwe</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit</receiver>
+   <slot>setFontItalic(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

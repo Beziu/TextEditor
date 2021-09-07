@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>New.png</file>
+        <file>Open.png</file>
+        <file>PagePreview.png</file>
+        <file>PageSetup.png</file>
+        <file>Print.png</file>
+        <file>Replace.png</file>
+        <file>Save.png</file>
+        <file>Search.jpg</file>
+        <file>SearchTransparent.png</file>
+        <file>App.png</file>
+        <file>Exit.png</file>
+    </qresource>
+</RCC>

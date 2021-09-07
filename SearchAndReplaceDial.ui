@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchAndReplaceDial</class>
+ <widget class="QDialog" name="SearchAndReplaceDial">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Szukaj i Zastap</string>
+  </property>
+  <widget class="QLabel" name="lblSzukaj">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>76</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Szukaj:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="textSzukaj">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>5</y>
+     <width>330</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblZastap">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>76</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zastap:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="textZastap">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>45</y>
+     <width>330</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkMaleDuze">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>95</y>
+     <width>176</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Duze/Male litery</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSzukajDalej">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>5</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Szukaj / Dalej</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnZastap">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>45</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zastap</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAnuluj">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>120</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuluj</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnZastapWszystko">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>80</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zastap wszystkie</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>textSzukaj</tabstop>
+  <tabstop>textZastap</tabstop>
+  <tabstop>checkMaleDuze</tabstop>
+  <tabstop>btnSzukajDalej</tabstop>
+  <tabstop>btnZastap</tabstop>
+  <tabstop>btnZastapWszystko</tabstop>
+  <tabstop>btnAnuluj</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
