@@ -42,7 +42,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>27</height>
+     <height>31</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">
@@ -86,7 +86,7 @@
     </property>
     <widget class="QMenu" name="menuJezyk">
      <property name="title">
-      <string>Jezyk</string>
+      <string>&amp;Jezyk</string>
      </property>
      <addaction name="actionPolski"/>
      <addaction name="actionAngielski"/>
@@ -175,7 +175,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Zawijanie wierszy</string>
+    <string>Za&amp;wijanie wierszy</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+W</string>
@@ -227,7 +227,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Text Kursiwe</string>
+    <string>Kursywa</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+I</string>
